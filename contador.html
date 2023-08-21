@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Contador</title>
+</head>
+<body>
+    <h1>Pontos dos Jogadores</h1>
+    <p>Adicione ou retire pontos de cada jogador</p>
+    <div class="jogador" id="jogador1">
+        <span class="nomeJogador">Jogador 1 </span>
+        <button name="subtrair" onclick="subtrair(1)">-</button>
+        <span class="pontosJogador" id="pontosJogador1">0</span>
+        <button type="submit"  name="adicionar" onclick="adicionar(1)">+</button>    
+    </div>
+
+    <div class="jogador" id="jogador2">
+        <span class="nomeJogador">Jogador 2 </span>
+        <button name="subtrair" onclick="subtrair(2)">-</button>
+        <span class="pontosJogador" id="pontosJogador2">0</span>
+        <button type="submit"  name="adicionar" onclick="adicionar(2)">+</button>    
+    </div>
+
+    <br>
+    <button id="botaoResetar" name="resetar" onclick="resetar()">Resetar</button>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
